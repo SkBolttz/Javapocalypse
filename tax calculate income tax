@@ -38,9 +38,8 @@ class Funcionario {
     }
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 package conta;
-
 import java.util.Scanner;
 public class app {
 
@@ -55,27 +54,23 @@ public class app {
 			Funcionario funcionario = new Funcionario();
 
 			System.out.println("Informe o nome do Funcionario " + (i + 1) + ":");
-            funcionario.setNome(sc.next());
+            		funcionario.setNome(sc.next());
 
-            System.out.println("Informe o Salário do Funcionário " + (i + 1) + ":");
-            funcionario.setSalario(sc.nextDouble());
+            		System.out.println("Informe o Salário do Funcionário " + (i + 1) + ":");
+            		funcionario.setSalario(sc.nextDouble());
 
-            dadosFuncionario[i] = funcionario;
-
-		}
-
-		for (int i = 0; i < 5; i++) {
-
-            Funcionario funcionario = dadosFuncionario[i];
-            System.out.println("Nome do Funcionário " + (i + 1) + ": " + funcionario.getNome());
-            System.out.println("Salário do Funcionário " + (i + 1) + ": " + funcionario.getSalario());
-            double imposto = funcionario.calcularIrpf();
-            if (imposto == 0) {
+            		dadosFuncionario[i] = funcionario;
+		}for (int i = 0; i < 5; i++) {
+		Funcionario funcionario = dadosFuncionario[i];
+            	System.out.println("Nome do Funcionário " + (i + 1) + ": " + funcionario.getNome());
+            	System.out.println("Salário do Funcionário " + (i + 1) + ": " + funcionario.getSalario());
+            	double imposto = funcionario.calcularIrpf();
+            	if (imposto == 0) {
                 System.out.println("Funcionário Isento!");
-            } else {
+                } else {
                 System.out.printf("Imposto que deverá ser pago pelo Funcionário " + (i + 1) + ": R$%.2f%n", imposto);
             }
         }
 	sc.close();
-}
+     }
 }
