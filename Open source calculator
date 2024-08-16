@@ -1,3 +1,108 @@
 You can find the problem description in the link below.
 https://github.com/danhpaiva/una-psc-alg-calculadora-java-poo.git
 
+package calculadora;
+public class Calculadora{
+
+    double num1;
+    double num2;
+
+    public void setNum1(double num1){
+        this.num1 = num1;
+    }
+    public double getNum1(){
+        return num1;
+    }
+    public void setNum2(double num2){
+        this.num2 = num2;
+    }
+    public double getNum2(){
+        return num2;
+    }
+
+    public double operacao(String operacao) {
+        switch (operacao) {
+            case "+":
+                return num1 + num2;
+            case "-":
+                return num1 - num2;
+            case "*":
+                return num1 * num2;
+            case "/":
+            if(num2 == 0){
+                throw new IllegalArgumentException ("Impossível realizar uma divisão por zero.");
+            }else{
+                return num1 / num2;
+            }
+            case "**":
+            if(num2 == 0){
+                return 1;
+            }else{
+                return Math.pow(num1,num2);
+            }
+            case "//":
+            if(num1 < 0){
+                throw new IllegalArgumentException ("Não existe raíz de número negativo!");
+            }else{
+                return Math.sqrt(num1);
+            }
+            default:
+            System.out.println("Operação informada inválida!");
+            return Double.NaN;
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package calculadora;
+import java.util.Scanner;
+public class app{
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        Calculadora numero = new Calculadora();
+        String continuar = "Q";
+
+        while(continuar == "Q"){
+        
+        System.out.println("Informe o número 1:");
+        numero.setNum1(sc.nextDouble());
+
+        System.out.println("Informe a operação que deseja realizar:");
+        String operacao = sc.next();
+
+        System.out.println("Informe o número 2:");
+        numero.setNum2(sc.nextDouble());
+
+        switch(operacao) {
+            case "+":
+            System.out.printf("O resultado da soma é: %.0f\n" , numero.operacao(operacao));
+            break;
+            case "-":
+            System.out.printf("O resultado da subtração é: %.0f\n" , numero.operacao(operacao));
+            break;
+            case "*":
+            System.out.printf("O resultado da multiplicação é: %.0f\n" , numero.operacao(operacao));
+            break;
+            case "/":
+            System.out.printf("O resultado da divisão é: %.0f\n" , numero.operacao(operacao));
+            break;
+            case "**":
+            System.out.printf("O resultado da expotenciação é: %.0f\n" , numero.operacao(operacao));
+            break;
+            case "//":
+            System.out.printf("O resultado da raiz quadrada é: %.0f\n" , numero.operacao(operacao));
+            break;
+            default:
+            throw new IllegalArgumentException ("Operador inválido!");
+        }
+
+        System.out.println("Para realizar outro conta informe digeite (Q) // Para sair do programa informe um digito =! de (Q)");
+        continuar = sc.next();
+
+        System.out.println("Programa encerrado, obrigado por utilizar!");
+        }
+    }
+}
