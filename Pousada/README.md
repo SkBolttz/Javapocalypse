@@ -47,6 +47,15 @@ Preencha os campos de Período e Quantidade de dias.
 Clique em "Consultar" para obter o valor final a ser cobrado.
 
 ![image](https://github.com/user-attachments/assets/23017b9f-020e-4e1c-b807-516fb8ac50f2)
-  
-  
-  
+
+**Sugestões e Dúvidas**
+
+Se você tiver sugestões de melhoria ou dúvidas sobre o código, sinta-se à vontade para entrar em contato.
+
+E-mail: pedrohenriqueborba1@gmail.com
+
+**Sugestões e Dúvidas**
+
+Se você tiver sugestões de melhoria ou dúvidas sobre o código, sinta-se à vontade para entrar em contato.
+
+E-mail: pedrohenriqueborba1@gmail.com
