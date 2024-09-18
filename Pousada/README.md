@@ -54,8 +54,3 @@ Se você tiver sugestões de melhoria ou dúvidas sobre o código, sinta-se à v
 
 E-mail: pedrohenriqueborba1@gmail.com
 
-**Sugestões e Dúvidas**
-
-Se você tiver sugestões de melhoria ou dúvidas sobre o código, sinta-se à vontade para entrar em contato.
-
-E-mail: pedrohenriqueborba1@gmail.com
