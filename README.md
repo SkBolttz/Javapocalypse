@@ -15,4 +15,5 @@ Para rodar os projetos, você precisa ter alguma IDE que rode Java instalado no 
 Se você tiver alguma dúvida ou quiser discutir sobre os projetos, sinta-se à vontade para me contatar!
 
 **E-mail:** pedrohenriqueborba1@gmail.com
+
 **LinkedIn**: [Pedro Borba](https://www.linkedin.com/in/pedro-borba)
